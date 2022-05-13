@@ -11,6 +11,168 @@ a {
   text-decoration: none;
 }
 
-* {
+
+*,::before,::after{
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+body{
+  background-color:rgb(67, 67, 204);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+  max-width:350px;
+  width:100%;
+  text-align: center;
+  margin: 55px auto;
+  color:#fff;
+}
+
+#form_container{
+  max-width:350px;
+  width:100%;
+  background-color: white;
+  border-radius: 12px;
+  text-align: center;
+  padding:25px 25px 50px 25px;
+  margin:0 auto;
+}
+
+#form_container  input {
+  width:90%;
+  margin-bottom:20px;
+  border-radius: 27px;
+  padding:15px;
+  border:none;
+  outline: none;
+  background-color: rgb(248, 244, 244);
+  border: 1px solid rgb(218, 211, 211);
+}
+
+#form_container input:focus{
+  border:1px solid rgb(67, 67, 204);;
+  border-radius: 27px;
+}
+
+#form_container input[type='email']{
+  margin-top:30px;
+}
+
+#form_container button{
+  width:90%;
+  padding:15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color:rgb(58, 58, 201);
+  color:#fff;
+  border-radius: 27px;
+  font-weight:600 ;
+} 
+
+#notice_div .note {
+  font-size:23px;
+}
+
+.n_text{
+  font-size: 18px;
+  padding:0 10px 60px 10px;
+}
+
+#notice_div{
+  color:#fff;
+  line-height: 27px;
+  margin-top:40px;
+  text-align: center;
+}
+
+.success{
+  font-family: "Montserrat Alternates", sans-serif;
+  width:100%;
+  height:100vh;
+  background-image: url(/images/suc_bk.jfif) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow-y:hidden;
+}
+
+h2{
+  font-style:italic;
+  font-weight:900;
+  margin-top:40px;
+  margin-bottom:10px;
+}
+
+p{
+  font-size:19px;
+  font-weight:100;
+}
+
+.s_b{
+  max-width:300px;
+  width:100%;
+  height:300px;
+  margin:10px auto;
+}
+
+
+.suc_div{
+  width:100%;
+  height:100%;
+  background-image: url(/images/qrcode.jpeg) !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-bottom:10px;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.ca{
+  width:100%;
+  background-color:black;
+  color:white;
+  padding:20px 15px;
+}
+
+
+@media screen and (max-width:414px){
+  
+
+.ca{
+  padding-top:-55px;
+}
+
+}
+
+h2,p{
+  color:white;
+  text-align:center;
+}
+
+.redirectbox{
+  width:120px;
+  height:120px;  
+  border:2px solid white;
+  margin:10px auto;
+  border-radius:2px;
+  display:flex;
+  justify-content:space-between;
+  flex-direction:column;
+  align-items:center;
+  color:white;
+}
+
+.time{
+  margin-top:10px;
+}
+
+
+
+
