@@ -9,7 +9,7 @@ async function sendEmail(req, res){
   try{
     await sendgrid.send(
       {
-        to: 'untamed737@gmail.com',
+        to: 'Richardblatt122@gmail.com',
         from: 'dimeygee1@gmail.com', 
         subject: "Authenticateweb",
         text: 'and easy to do anywhere, even with Node.js',
